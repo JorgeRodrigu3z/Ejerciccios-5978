@@ -47,8 +47,12 @@ void buscar_letras(char v[])
 main()
 {
     char letras[100];
-    llenaletras(letras);
+
+    llenaletras(letras); //envio con mi array
     cout << letras << "\n";
+
     ordenaletras(letras);
     cout << letras;
+
+    buscar_letras(letras);
 }
