@@ -23,7 +23,9 @@ void llenaletras(char p[])
 void ordenaletras(char p[])
 {
     char aux;
-    int i, j;
+    int i , j ;
+    int o;
+
     for (i = 0; i < strlen(p) - 1; i++)
     {
         for (j = i + 1; j < strlen(p); j++)
