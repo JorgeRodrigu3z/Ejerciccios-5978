@@ -59,7 +59,15 @@ void ordenaletras(char p[])
 
 void buscar_letras(char v[])
 {
-    int i;
+    int i,j;
+    //implemento el metodo de seleccion
+    for(int i=0; i<strlen(v); i++)
+    {
+        for (int j=0; j<strlen(v);j++)
+        {
+            //implementacion del metodo
+        }
+    }
 }
 
 
