@@ -66,6 +66,12 @@ void buscar_letras(char v[])
         for (int j=0; j<strlen(v);j++)
         {
             //implementacion del metodo
+             if (v[i] > v[j])
+            {
+                aux = v[i];
+                v[i] = v[j];
+                v[j] = aux;
+            }
         }
     }
 }
