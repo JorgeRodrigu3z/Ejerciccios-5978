@@ -5,18 +5,35 @@
 #include <string.h>
 using namespace std;
 
-void llenaletras(char p[])
+void llenaletras(char v[])
 {
-    int lc, i;
-    srand(time(NULL));
-    lc = 1 + rand() % 20;
-    for (i = 0; i < lc; i++)
-    {
-        p[i] = 97 + rand() % 26;
-    }
-    p[i] = '\0';
+    int lc, i,num,jx;
+    char aux[10];
 
-    // a-z 97-122 o A-Z 65 - 90
+    srand(time(NULL));
+    lc = 1 + rand() % 10;
+
+    for  (int j = 0; j < 10; j++)
+    {
+        aux[j]=97 + rand() % 26;
+    }
+        
+
+    for ( i = 0, jx = 0; i < lc ; i++)
+    {
+        if (v[i]=!aux[jx])
+        {
+            v[i]=aux[jx];
+        }
+        else
+        {
+            jx++;
+        }
+    }
+    
+    v[i] = '\0';
+
+    
 }
 
 
@@ -42,7 +59,7 @@ void ordenaletras(char p[])
 
 void buscar_letras(char v[])
 {
-
+    int i;
 }
 
 
